@@ -94,3 +94,23 @@ Neck: RSE: 5.376. ARS: 0.7476
 Chest: RSE: 4.939 ARS: 0.7869
 
 Headlen: RSE: 4.235 ARS: 0.8434
+
+```{r}
+ourage <- lm(LENGTH~AGE,data=bears)
+plot(LENGTH~AGE,data=bears)
+abline(ourage)
+summary.lm(ourage)
+```
+Ranked from worst to best is Age, Headwth, Weight, Neck, Chest, and finally Headlen.
+
+Age: RSE: 7.511 ARS: 0.5073
+
+Headwth: RSE: 7.32 ARS: 0.5321
+
+Weight: RSE: 5.432, ARS: 0.7423
+
+Neck: RSE: 5.376. ARS: 0.7476
+
+Chest: RSE: 4.939 ARS: 0.7869
+
+Headlen: RSE: 4.235 ARS: 0.843
